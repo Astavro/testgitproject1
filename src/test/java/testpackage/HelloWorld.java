@@ -3,13 +3,10 @@ package testpackage;
 public class HelloWorld {
 
 	public static void main(String[] args) {
+		Cryptograms crg = new Cryptograms("Practice what you preach, stay hard");
 		
-		System.out.println(myFunc(0));
-		System.out.println(myFunc(1));
+		System.out.println(crg.getOriginalStr());
 		
-		System.out.println(concat("Go ", "Antoine"));
-		
-		displayGoodMorningAntoine("Antoine");
 	}
 
 	public static String myFunc(int x) {
@@ -28,4 +25,5 @@ public class HelloWorld {
 	public static void displayGoodMorningAntoine(String name) {
 		System.out.println("Good Morning " + name);
 	}
+	
 }
