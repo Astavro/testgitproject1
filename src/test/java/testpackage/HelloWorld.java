@@ -8,6 +8,8 @@ public class HelloWorld {
 		System.out.println(myFunc(1));
 		
 		System.out.println(concat("Go ", "Antoine"));
+		
+		displayGoodMorningAntoine("Antoine");
 	}
 
 	public static String myFunc(int x) {
@@ -21,5 +23,9 @@ public class HelloWorld {
 	
 	public static String concat(String str1, String str2) {
 		return str1 + str2;
+	}
+	
+	public static void displayGoodMorningAntoine(String name) {
+		System.out.println("Good Morning " + name);
 	}
 }
