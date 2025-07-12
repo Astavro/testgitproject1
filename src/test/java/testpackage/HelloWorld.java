@@ -3,9 +3,11 @@ package testpackage;
 public class HelloWorld {
 
 	public static void main(String[] args) {
-		Cryptograms crg = new Cryptograms("Practice what you preach, stay hard");
+		StringBuilder sb = new StringBuilder("Practice what you preach, stay hard");
+		Cryptograms crg = new Cryptograms(sb,sb);
 		
 		System.out.println(crg.getOriginalStr());
+		System.out.println(crg.getCrupStr());
 		
 	}
 
